@@ -3,26 +3,24 @@ import { getAllSales } from "../../Api/MainApi";
 
 function SelectProduct() {
   const [salesData, setSalesData] = useState([]);
-  const [selectedProduct, setSelectedProduct] = useState("");
-
-  const fetchData = async () => {
-    try {
-      const data = await getAllSales();
-      console.log("Fetched sales data:", data);
-
-      const filteredData = selectedProduct ? data.filter((item) => item.product === selectedProduct) : data;
-      setSalesData(filteredData);
-    } catch (error) {
-      console.error("Error fetching data", error);
-    }
-  };
+  const [selectedProduct, onSelectProduct] = useState("");
 
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getAllSales();
+        console.log("Fetched sales data:", data);
+
+        const filteredData = selectedProduct ? data.filter((item) => item.product === selectedProduct) : data;
+        setSalesData(filteredData);
+      } catch {}
+    };
+
     fetchData();
   }, [selectedProduct]);
 
   const handleSelectProduct = (product) => {
-    setSelectedProduct(product);
+    onSelectProduct(product);
   };
 
   return {
