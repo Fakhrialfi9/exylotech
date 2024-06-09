@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/exylotech/static/css/main.5353fca0.css",
+    "main.js": "/exylotech/static/js/main.6bfc063b.js",
+    "static/css/84.1b43341e.chunk.css": "/exylotech/static/css/84.1b43341e.chunk.css",
+    "static/js/84.f40c1410.chunk.js": "/exylotech/static/js/84.f40c1410.chunk.js",
+    "static/css/228.ebfa5d03.chunk.css": "/exylotech/static/css/228.ebfa5d03.chunk.css",
+    "static/js/228.e4a75659.chunk.js": "/exylotech/static/js/228.e4a75659.chunk.js",
+    "static/css/859.ce3d15ca.chunk.css": "/exylotech/static/css/859.ce3d15ca.chunk.css",
+    "static/js/859.15bfa5e0.chunk.js": "/exylotech/static/js/859.15bfa5e0.chunk.js",
+    "static/js/372.87137f17.chunk.js": "/exylotech/static/js/372.87137f17.chunk.js",
+    "static/js/453.dbab25f4.chunk.js": "/exylotech/static/js/453.dbab25f4.chunk.js",
+    "static/js/309.f1a4e2c4.chunk.js": "/exylotech/static/js/309.f1a4e2c4.chunk.js",
+    "static/js/446.b343ad1d.chunk.js": "/exylotech/static/js/446.b343ad1d.chunk.js",
+    "static/media/LogoExylo.webp": "/exylotech/static/media/LogoExylo.92d71f42f89f1bb4b5f7.webp",
+    "static/media/DashBoard.svg": "/exylotech/static/media/DashBoard.447a6ae9e41a583f9026863a796e6cda.svg",
+    "static/media/Setting.svg": "/exylotech/static/media/Setting.d61f077880c200f42d320fdf08de83c9.svg",
+    "static/media/Invoice.svg": "/exylotech/static/media/Invoice.fc431ee139643e0b7247cdd4c7640460.svg",
+    "static/media/Basket.svg": "/exylotech/static/media/Basket.2f8132d61d457e05e34396bbe5456401.svg",
+    "static/media/Person.svg": "/exylotech/static/media/Person.5405cd0e7846ea1a7e54e522c7734644.svg",
+    "static/media/ChartView.svg": "/exylotech/static/media/ChartView.9fdef3d97a43213e0acb5c7e734fb8a4.svg",
+    "static/media/Support.svg": "/exylotech/static/media/Support.d623b444d754cbb11062516540af854b.svg",
+    "static/media/Cart.svg": "/exylotech/static/media/Cart.2647d371ea89e4dd4b1db0e5c02429fc.svg",
+    "static/media/Logout.svg": "/exylotech/static/media/Logout.c71ac15b3a451d246f5b74fda512e8fe.svg",
+    "index.html": "/exylotech/index.html",
+    "main.5353fca0.css.map": "/exylotech/static/css/main.5353fca0.css.map",
+    "main.6bfc063b.js.map": "/exylotech/static/js/main.6bfc063b.js.map",
+    "84.1b43341e.chunk.css.map": "/exylotech/static/css/84.1b43341e.chunk.css.map",
+    "84.f40c1410.chunk.js.map": "/exylotech/static/js/84.f40c1410.chunk.js.map",
+    "228.ebfa5d03.chunk.css.map": "/exylotech/static/css/228.ebfa5d03.chunk.css.map",
+    "228.e4a75659.chunk.js.map": "/exylotech/static/js/228.e4a75659.chunk.js.map",
+    "859.ce3d15ca.chunk.css.map": "/exylotech/static/css/859.ce3d15ca.chunk.css.map",
+    "859.15bfa5e0.chunk.js.map": "/exylotech/static/js/859.15bfa5e0.chunk.js.map",
+    "372.87137f17.chunk.js.map": "/exylotech/static/js/372.87137f17.chunk.js.map",
+    "453.dbab25f4.chunk.js.map": "/exylotech/static/js/453.dbab25f4.chunk.js.map",
+    "309.f1a4e2c4.chunk.js.map": "/exylotech/static/js/309.f1a4e2c4.chunk.js.map",
+    "446.b343ad1d.chunk.js.map": "/exylotech/static/js/446.b343ad1d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5353fca0.css",
+    "static/js/main.6bfc063b.js"
+  ]
+}
