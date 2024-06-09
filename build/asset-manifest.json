@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/exylotech/static/css/main.5353fca0.css",
-    "main.js": "/exylotech/static/js/main.6bfc063b.js",
+    "main.js": "/exylotech/static/js/main.d9e35b5b.js",
     "static/css/84.1b43341e.chunk.css": "/exylotech/static/css/84.1b43341e.chunk.css",
     "static/js/84.f40c1410.chunk.js": "/exylotech/static/js/84.f40c1410.chunk.js",
-    "static/css/228.ebfa5d03.chunk.css": "/exylotech/static/css/228.ebfa5d03.chunk.css",
-    "static/js/228.e4a75659.chunk.js": "/exylotech/static/js/228.e4a75659.chunk.js",
-    "static/css/859.ce3d15ca.chunk.css": "/exylotech/static/css/859.ce3d15ca.chunk.css",
-    "static/js/859.15bfa5e0.chunk.js": "/exylotech/static/js/859.15bfa5e0.chunk.js",
+    "static/css/584.06aa129a.chunk.css": "/exylotech/static/css/584.06aa129a.chunk.css",
+    "static/js/584.0c871e04.chunk.js": "/exylotech/static/js/584.0c871e04.chunk.js",
+    "static/css/786.407814db.chunk.css": "/exylotech/static/css/786.407814db.chunk.css",
+    "static/js/786.6e2fe65b.chunk.js": "/exylotech/static/js/786.6e2fe65b.chunk.js",
     "static/js/372.87137f17.chunk.js": "/exylotech/static/js/372.87137f17.chunk.js",
     "static/js/453.dbab25f4.chunk.js": "/exylotech/static/js/453.dbab25f4.chunk.js",
     "static/js/309.f1a4e2c4.chunk.js": "/exylotech/static/js/309.f1a4e2c4.chunk.js",
@@ -24,13 +24,13 @@
     "static/media/Logout.svg": "/exylotech/static/media/Logout.c71ac15b3a451d246f5b74fda512e8fe.svg",
     "index.html": "/exylotech/index.html",
     "main.5353fca0.css.map": "/exylotech/static/css/main.5353fca0.css.map",
-    "main.6bfc063b.js.map": "/exylotech/static/js/main.6bfc063b.js.map",
+    "main.d9e35b5b.js.map": "/exylotech/static/js/main.d9e35b5b.js.map",
     "84.1b43341e.chunk.css.map": "/exylotech/static/css/84.1b43341e.chunk.css.map",
     "84.f40c1410.chunk.js.map": "/exylotech/static/js/84.f40c1410.chunk.js.map",
-    "228.ebfa5d03.chunk.css.map": "/exylotech/static/css/228.ebfa5d03.chunk.css.map",
-    "228.e4a75659.chunk.js.map": "/exylotech/static/js/228.e4a75659.chunk.js.map",
-    "859.ce3d15ca.chunk.css.map": "/exylotech/static/css/859.ce3d15ca.chunk.css.map",
-    "859.15bfa5e0.chunk.js.map": "/exylotech/static/js/859.15bfa5e0.chunk.js.map",
+    "584.06aa129a.chunk.css.map": "/exylotech/static/css/584.06aa129a.chunk.css.map",
+    "584.0c871e04.chunk.js.map": "/exylotech/static/js/584.0c871e04.chunk.js.map",
+    "786.407814db.chunk.css.map": "/exylotech/static/css/786.407814db.chunk.css.map",
+    "786.6e2fe65b.chunk.js.map": "/exylotech/static/js/786.6e2fe65b.chunk.js.map",
     "372.87137f17.chunk.js.map": "/exylotech/static/js/372.87137f17.chunk.js.map",
     "453.dbab25f4.chunk.js.map": "/exylotech/static/js/453.dbab25f4.chunk.js.map",
     "309.f1a4e2c4.chunk.js.map": "/exylotech/static/js/309.f1a4e2c4.chunk.js.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.5353fca0.css",
-    "static/js/main.6bfc063b.js"
+    "static/js/main.d9e35b5b.js"
   ]
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getAllSales } from "../../../../../Api/MainApi";
-import "../../../../Style/Pages/Home/DashBoard.css";
+import { getAllSales } from "../../../../Api/MainApi";
+import "../../../Style/Pages/Home/DashBoard.css";
 
 function SelectProduct({ selectedProducts, onSelectProduct }) {
   const [products, setProducts, salesData, setSalesData] = useState([]);

@@ -1,8 +1,8 @@
 import "../../../Style/Pages/Home/DashBoard.css";
 
-import ChartDailySalesDashBoard from "./Section/ChartDailySalesDashBoard";
-import ChartComparisonSalesDashBoard from "./Section/ChartComparisonSalesDashBoard.jsx";
-import TableSalesDashboard from "./Section/TableSalesDashboard.jsx";
+import ChartDailySalesDashBoard from "./Section/ChartDailySales.jsx";
+import ChartComparisonSalesDashBoard from "./Section/ChartComparisonSales.jsx";
+import TableSalesDashboard from "./Section/TableSales.jsx";
 
 function DashBoard({ selectedProduct }) {
   return (

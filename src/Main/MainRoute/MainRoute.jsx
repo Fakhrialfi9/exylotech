@@ -7,7 +7,7 @@ import FunctionSelectProduct from "./../../Resources/Function/FunctionSelectProd
 
 import { lazy, Suspense } from "react";
 const Sidebar = lazy(() => import("../../Resources/View/Components/Sidebar/Sidebar"));
-const Navbar = lazy(() => import("../../Resources/View/Pages/Home/Section/NavbarDashboard"));
+const Navbar = lazy(() => import("../../Resources/View/Pages/Home/Section/Navbar"));
 const DashBoard = lazy(() => import("../../Resources/View/Pages/Home/DashBoard"));
 const Footer = lazy(() => import("../../Resources/View/Components/Footer/Footer"));
 

@@ -11,11 +11,12 @@ const TableComponent = () => {
     setFilter(event.target.value);
   };
 
-  // Calculate total revenue
   const totalRevenue = salesData.reduce((total, item) => total + item.revenue, 0);
 
-  // Find the product with the highest revenue
-  const productWithHighestRevenue = salesData.sort((a, b) => b.revenue - a.revenue)[0]?.product || "N/A";
+  const totalSales = salesData.reduce((total, item) => total + item.sales, 0);
+
+  const productWithHighestRevenue = salesData.sort((a, b) => b.revenue - a.revenue)[0]?.product;
+
   return (
     <div className="TableContainer">
       <div className="TableContent">
@@ -49,8 +50,12 @@ const TableComponent = () => {
                   <td>{sale.id}</td>
                   <td>{sale.product}</td>
                   <td>{sale.date}</td>
-                  <td>{sale.sales}</td>
-                  <td>${sale.revenue}</td>
+                  <td>
+                    <b>${sale.sales}</b>
+                  </td>
+                  <td>
+                    <b>${sale.revenue}</b>
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -61,10 +66,13 @@ const TableComponent = () => {
       )}
       <div className="TableContent-RightBottom">
         <h5>
-          Product Terlaku <b>{productWithHighestRevenue}</b>
+          Best Seller <b>{productWithHighestRevenue}</b>
         </h5>
         <h5>
-          Total Penjualan <b>${totalRevenue.toFixed(2)}</b>
+          Total Sales <b>${totalSales.toFixed(2)}</b>
+        </h5>
+        <h5>
+          Total Revenue <b>${totalRevenue.toFixed(2)}</b>
         </h5>
       </div>
     </div>

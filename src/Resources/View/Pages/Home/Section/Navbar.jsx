@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import "../../../../Style/Pages/Home/DashBoard.css";
-import SelectProduct from "../../../Pages/Home/SectionNavbarDashBoard/SelectProduct";
-import SelectDate from "../../../Pages/Home/SectionNavbarDashBoard//SelectDate";
-import SearchTables from "../../../Pages/Home/SectionNavbarDashBoard//SearchTables";
+import SelectProduct from "../../../Components/Navbar/SelectProduct";
+import SelectDate from "../../../Components/Navbar/SelectDate";
+import SearchTables from "../../../Components/Navbar/SearchTables";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faEnvelope } from "@fortawesome/free-solid-svg-icons";
