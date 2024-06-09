@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://fakhrialfi9.github.io/exylotech";
+const baseURL = "http://localhost:3001";
 const api = axios.create({
   baseURL: baseURL,
 });
