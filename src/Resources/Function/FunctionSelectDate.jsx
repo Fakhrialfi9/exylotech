@@ -1,21 +1,35 @@
-import React, { useState, useEffect } from "react";
-import { getSalesByDateRange } from "../../../../../Api/MainApi";
-import ChartDailySales from "../View/Components/Chart/ChartDailySales";
-import SelectDate from "../View/Pages/Home/SectionNavbarDashBoard/SelectDate";
+import { useState, useEffect } from "react";
+import { getAllDate } from "../../Api/MainApi";
 
-function FunctionSelectDate() {
-  const [dateRange, setDateRange] = useState({ startDate: "", endDate: "" });
+function FunctionSelectDate({ startDate, endDate }) {
+  const [salesData, setSalesData] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState("");
 
-  const handleDateChange = (startDate, endDate) => {
-    setDateRange({ startDate, endDate });
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getAllDate(startDate, endDate);
+        console.log("Fetched sales data:", data);
+
+        const filteredData = selectedProduct ? data.filter((item) => item.product === selectedProduct) : data;
+        setSalesData(filteredData);
+      } catch (error) {
+        console.error("Error fetching sales data", error);
+      }
+    };
+
+    fetchData();
+  }, [selectedProduct, startDate, endDate]);
+
+  const handleSelectProduct = (product) => {
+    setSelectedProduct(product);
   };
 
-  return (
-    <div>
-      <SelectDate onDateChange={handleDateChange} />
-      <ChartDailySales dateRange={dateRange} />
-    </div>
-  );
+  return {
+    salesData,
+    selectedProduct,
+    handleSelectProduct,
+  };
 }
 
 export default FunctionSelectDate;

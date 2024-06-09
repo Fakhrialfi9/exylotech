@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getAllSales } from "../../Api/MainApi";
 
-function SelectProduct() {
+function FunctionSelectProduct() {
   const [salesData, setSalesData] = useState([]);
   const [selectedProduct, onSelectProduct] = useState("");
 
@@ -30,4 +30,4 @@ function SelectProduct() {
   };
 }
 
-export default SelectProduct;
+export default FunctionSelectProduct;

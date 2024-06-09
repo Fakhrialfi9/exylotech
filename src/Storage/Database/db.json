@@ -1,5 +1,5 @@
 {
-  "sales": [
+  "db.json": [
     {
       "id": 1,
       "product": "Beras",
