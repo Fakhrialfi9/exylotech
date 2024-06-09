@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
+.LazyLoading {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  background-color: #0c64a2;
+}
+
+.LazyLoading h5 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.MainLayout {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.SideBarLayout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  justify-content: space-between !important;
+  margin: 0;
+  padding: 0;
+}
+
+.SideBarLayout-Left {
+  position: fixed;
+  left: 0;
+  width: 20vw;
+  max-width: 20vw;
+  height: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  margin-right: auto !important;
+}
+
+.PageContentLayout-Right {
+  width: 80vw !important;
+  max-width: 80vw !important;
+  height: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  box-sizing: border-box !important;
+  margin-left: auto !important;
+}
+
+.FooterLayout {
+  display: flex;
+  flex-direction: row;
+  right: 0 !important;
+  width: 80vw !important;
+  max-width: 80vw !important;
+  height: auto;
+  min-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  margin-left: auto !important;
+  background-color: blue;
+}

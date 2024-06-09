@@ -1,0 +1,851 @@
+.MainDashBoard {
+  display: flex;
+  flex-direction: column;
+  width: 80vw !important;
+  max-width: 80vw !important;
+  height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.DashBoardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 95%;
+  height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.DashBoardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: flex-start !important;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  gap: 1.5rem !important;
+}
+
+/* Start Navbar DashBoard */
+
+.MainNavbarDashBoard {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 80vw;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.NavbarDashBoard {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 80vw;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255, 0.75);
+  backdrop-filter: blur(20rem);
+  z-index: 9999 !important;
+}
+
+.NavbarDashBoardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  max-width: 95%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.NavbarDashBoardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Start Navbar Top */
+
+.NavbarDashBoardTop {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-width: auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0.85rem 0;
+  border-bottom: 0.05rem solid var(--GrayColor);
+}
+
+.NavbarDashBoardTop-Left {
+  display: flex;
+  flex-direction: row;
+  width: 13.5%;
+  max-width: 13.5%;
+  height: auto;
+  max-width: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.NavbarDashBoardTop-Left h5 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.NavbarDashBoardTop-Center {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Start Search */
+
+.SearchForm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  gap: 0.65rem;
+}
+
+.input-grey-rounded {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f6f5f8;
+  border: 0.08rem solid var(--GrayColor);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='%238C92A0' d='M11.44 10.73l4.41 4.42a.5.5 0 1 1-.7.7l-4.42-4.41a6.5 6.5 0 1 1 .7-.7v-.01zM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z'></path></svg>");
+  background-repeat: no-repeat;
+  background-position: 0.75rem 0.525rem;
+  background-size: 1.15rem 1.15rem;
+  border-radius: 100px;
+  width: 20rem;
+  padding: 0.35rem 1rem 0.35rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.input-grey-rounded::placeholder {
+  color: #838d99;
+}
+
+.input-grey-rounded:focus {
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #0c64a2;
+}
+
+.SearchButton {
+  font-size: 16px;
+  border: 0.08rem solid var(--GrayColor);
+  border-radius: 100px;
+  padding: 0.55rem 1rem;
+  background-color: #f6f5f8;
+  color: #838d99;
+  cursor: pointer;
+}
+
+.SearchButton:hover {
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #0c64a2;
+}
+
+/* End Search */
+
+.NavbarDashBoardTop-Right {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.NavbarDashBoardTop-Right button {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 0.08rem solid var(--GrayColor);
+  border-radius: 100px;
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  gap: 0.45rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.NavbarDashBoardTop-Right button:hover {
+  background-color: #fff;
+  border: 1px solid #0c64a2;
+  cursor: pointer;
+}
+
+.NavbarDashBoardTop-Right button:active {
+  transform: scale(0.8);
+}
+
+.BadgeNavbar {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.35rem;
+  font-size: 0.65rem;
+}
+
+.Icon-Bell,
+.Icon-Envelope {
+  color: var(--GrayDarkColor);
+  font-size: 1.1rem;
+}
+
+/* End Navbar Top */
+
+/* Start Navbar Bottom */
+.NavbarDashBoardBottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-width: auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0.85rem 0;
+}
+
+.NavbarDashBoardBottom-Left {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+/* 
+.NavbarDashBoardBottom-Left ul {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0.55rem;
+}
+
+.NavbarDashBoardBottom-Left li a {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0.35rem 1.25rem;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 0.05rem solid #0c64a2 !important;
+  color: #0c64a2 !important;
+  background-color: transparent !important;
+}
+
+.NavbarDashBoardBottom-Left a:hover {
+  color: var(--LightColor) !important;
+  background-color: #0c64a2 !important;
+  border: 0.05rem solid transparent !important;
+} */
+
+.NavbarDashBoardBottom-Right {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1.25rem;
+}
+
+.InputNavbarDashBoardBottom-Right {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.date-filter-input {
+  padding: 0.5rem 0.85rem;
+  border: 0.05rem solid #0c64a2 !important;
+  color: var(--DarkColor);
+  font-size: 0.95rem;
+  outline: none;
+  border-radius: 100px;
+}
+
+.date-filter-input:hover {
+  cursor: pointer;
+}
+
+.date-filter-input::placeholder {
+  color: var(--DarkColor);
+}
+
+.date-filter-input:focus {
+  border-color: #007bff;
+}
+
+.DateButtonApply {
+  font-size: 16px;
+  border: 0.08rem solid var(--LightColor);
+  border-radius: 100px;
+  padding: 0.55rem 1rem;
+  background-color: #0c64a2;
+  color: var(--LightColor);
+  cursor: pointer;
+}
+
+.DateButtonApply:hover {
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #0c64a2;
+  color: #0c64a2;
+}
+
+.ProductInput {
+  padding: 0.5rem 2rem 0.5rem 0.85rem;
+  border: 0.05rem solid #0c64a2;
+  color: var(--DarkColor);
+  font-size: 0.95rem;
+  outline: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ProductInput:hover {
+  border-color: #007bff;
+}
+
+.ProductInput::placeholder {
+  color: var(--DarkColor);
+}
+
+.ProductInput:focus {
+  border-color: #007bff;
+}
+
+.InputDateNavbarDashBoardBottom-Right {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+/* End Navbar Bottom */
+
+/* End Navbar DashBoard */
+
+/* Start Chart Daily Sales  DashBoard */
+
+.MainChartDailySalesDashBoard {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 80vw;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 9rem 0 0 0;
+  padding: 0;
+}
+
+.ChartDailySalesDashBoard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ChartDailySalesDashBoardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  max-width: 95%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ChartDailySalesDashBoardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Box-ChartDailySalesDashBoard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 1rem 1rem;
+  border-radius: 1.25rem;
+  border: 0.05rem solid var(--GrayColor);
+  background-color: var(--LightColor);
+}
+
+/* End Chart Daily Sales  DashBoard */
+
+/* Start Chart Comparison Sales  DashBoard */
+
+.MainChartComparisonSalesDashBoard {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 80vw;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ChartComparisonSalesDashBoard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ChartComparisonSalesDashBoardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  max-width: 95%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ChartComparisonSalesDashBoardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Box-ChartComparisonSalesDashBoard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 1rem 1rem;
+  border-radius: 1.25rem;
+  border: 0.05rem solid var(--GrayColor);
+  background-color: var(--LightColor);
+}
+
+/* End Chart Comparison Sales  DashBoard */
+
+/* Start Table Sales DashBoard */
+
+.MainTableSalesDashboard {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 80vw;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.TableSalesDashBoard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.TableSalesDashBoardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  max-width: 95%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.TableSalesDashBoardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Box-TableSalesDashBoard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 1rem 1rem;
+  border-radius: 1.25rem;
+  border: 0.05rem solid var(--GrayColor);
+  background-color: var(--LightColor);
+}
+
+.TableContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.TableContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0 0 1.5rem 0;
+}
+
+.TableContent-Left {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  max-width: 20%;
+  height: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.TableContent-Right {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 80%;
+  height: auto;
+  max-width: auto;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.TableContent-RightBottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-width: auto;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.TableContent-RightBottom h5 {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 1.5rem 0 0 0;
+  font-size: 1rem;
+  font-weight: 400;
+  gap: 0.5rem;
+}
+
+.FilterTable {
+  padding: 0.5rem 2rem 0.5rem 0.85rem;
+  border: 0.05rem solid #0c64a2;
+  color: var(--DarkColor);
+  font-size: 0.95rem;
+  outline: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.FilterTable:hover {
+  border-color: #007bff;
+}
+
+.FilterTable::placeholder {
+  color: var(--DarkColor);
+}
+
+.FilterTable:focus {
+  border-color: #007bff;
+}
+
+.TableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.TableContainer th,
+.TableContainer td {
+  padding: 0.7rem 1.25rem;
+  text-align: left;
+}
+
+.TableContainer th {
+  background-color: #f2f2f2;
+}
+
+.TableContainer tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.TableContainer tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* End Table Sales DashBoard */

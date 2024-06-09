@@ -1,0 +1,74 @@
+{
+  "sales": [
+    {
+      "id": 1,
+      "product": "Beras",
+      "date": "2023-01-01",
+      "sales": 3500,
+      "revenue": 4000
+    },
+    {
+      "id": 2,
+      "product": "Jagung",
+      "date": "2023-01-02",
+      "sales": 3250,
+      "revenue": 3500
+    },
+    {
+      "id": 3,
+      "product": "Singkong",
+      "date": "2023-01-03",
+      "sales": 3150,
+      "revenue": 3250
+    },
+    {
+      "id": 4,
+      "product": "Ubi",
+      "date": "2023-01-04",
+      "sales": 5500,
+      "revenue": 6000
+    },
+    {
+      "id": 5,
+      "product": "Talas",
+      "date": "2023-01-05",
+      "sales": 4300,
+      "revenue": 4800
+    },
+    {
+      "id": 6,
+      "product": "Garut",
+      "date": "2023-01-06",
+      "sales": 2950,
+      "revenue": 3200
+    },
+    {
+      "id": 7,
+      "product": "Sorgum",
+      "date": "2023-01-07",
+      "sales": 2235,
+      "revenue": 2500
+    },
+    {
+      "id": 8,
+      "product": "Jewawut",
+      "date": "2023-01-08",
+      "sales": 5350,
+      "revenue": 6350
+    },
+    {
+      "id": 9,
+      "product": "Sagu",
+      "date": "2023-01-09",
+      "sales": 1245,
+      "revenue": 1500
+    },
+    {
+      "id": 10,
+      "product": "Rajalele",
+      "date": "2023-01-10",
+      "sales": 2465,
+      "revenue": 2750
+    }
+  ]
+}
