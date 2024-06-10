@@ -5,10 +5,16 @@ import axios from "axios";
 //   baseURL: baseURL,
 // });
 
-const baseURL = "https://fakhrialfi9.github.io/exylotech/";
+// const baseURL = "https://fakhrialfi9.github.io/exylotech/src/";
+// const api = axios.create({
+//   baseURL: baseURL,
+// });
+
+const baseURL = "https://fakhrialfi9.github.io/exylotech/src/Storage/Database/db.json";
 const api = axios.create({
   baseURL: baseURL,
 });
+
 
 export const getAllProducts = async () => {
   try {
