@@ -30,7 +30,7 @@ function MainRoute() {
                 <Route
                   path="/"
                   element={
-                    <Navigate to="exylotech/dashboard" replace selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} startDate={startDate} endDate={endDate} onStartDateChange={setStartDate} onEndDateChange={setEndDate} />
+                    <Navigate to="/exylotech" replace selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} startDate={startDate} endDate={endDate} onStartDateChange={setStartDate} onEndDateChange={setEndDate} />
                   }
                 />
                 <Route path="/" Component={Sidebar} />
