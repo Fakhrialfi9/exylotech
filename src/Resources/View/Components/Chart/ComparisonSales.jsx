@@ -1,23 +1,41 @@
 import React, { useEffect, useState } from "react";
 import { ResponsiveContainer, Brush, Area, ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
-import salesData from "../../../../Storage/Database/db.json";
+import { getAllSales } from "../../../../Api/MainApi";
 
 import "../../../Style/Components/Chart/Chart.css";
 import "../../../Style/Pages/Home/DashBoard.css";
 
 function ComparisonSales({ selectedProduct }) {
-  const [data, setData] = useState([]);
+  const [salesData, setSalesData] = useState([]);
 
   useEffect(() => {
-    setData(salesData.sales); // Mengatur data dari file JSON ke state
-  }, []);
+    fetchData();
+  }, [selectedProduct]);
+
+  const fetchData = async () => {
+    try {
+      const data = await getAllSales();
+      if (selectedProduct === "all") {
+        setSalesData(data);
+        return;
+      }
+
+      const filteredData = selectedProduct ? data.filter((item) => item.product === selectedProduct) : data;
+
+      const sortedData = filteredData.sort((a, b) => a.sales - b.sales);
+
+      setSalesData(sortedData);
+    } catch (error) {
+      console.error("Error fetching data", error);
+    }
+  };
 
   return (
     <div className="ChartContainer">
       <h5>Pembandingan Penjualan</h5>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
-          data={data}
+          data={salesData}
           // syncId="anyId"
           margin={{
             top: 20,
