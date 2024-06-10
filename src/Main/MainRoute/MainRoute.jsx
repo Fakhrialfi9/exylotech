@@ -12,7 +12,7 @@ const DashBoard = lazy(() => import("../../Resources/View/Pages/Home/DashBoard")
 const Footer = lazy(() => import("../../Resources/View/Components/Footer/Footer"));
 
 function MainRoute() {
-  const { selectedProduct, handleSelectProduct } = FunctionSelectProduct();
+  const { selectedProduct, handleSelectProduct, startDate, endDate, setStartDate, setEndDate, salesData } = FunctionSelectProduct();
 
   return (
     <main id="MainLayout">
@@ -27,7 +27,12 @@ function MainRoute() {
           <div className="SideBarLayout">
             <div className="SideBarLayout-Left">
               <Routes>
-                <Route path="/" element={<Navigate to="/dashboard" replace />} />
+                <Route
+                  path="/"
+                  element={
+                    <Navigate to="exylotech/dashboard" replace selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} startDate={startDate} endDate={endDate} onStartDateChange={setStartDate} onEndDateChange={setEndDate} />
+                  }
+                />
                 <Route path="/" Component={Sidebar} />
                 <Route path="/exylotech" Component={Sidebar} />
                 <Route path="/dashboard" Component={Sidebar} />
@@ -43,8 +48,8 @@ function MainRoute() {
             <div className="PageContentLayout-Right">
               <Routes>
                 <Route path="/" Component={Navbar} />
-                <Route path="/exylotech" element={<Navbar selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} />} />
-                <Route path="/dashboard" element={<Navbar selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} />} />
+                <Route path="/exylotech" element={<Navbar selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} startDate={startDate} endDate={endDate} onStartDateChange={setStartDate} onEndDateChange={setEndDate} />} />
+                <Route path="/dashboard" element={<Navbar selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} startDate={startDate} endDate={endDate} onStartDateChange={setStartDate} onEndDateChange={setEndDate} />} />
                 <Route path="/orders" Component={Navbar} />
                 <Route path="/product" Component={Navbar} />
                 <Route path="/customers" Component={Navbar} />
@@ -55,8 +60,8 @@ function MainRoute() {
               </Routes>
               <Routes>
                 <Route path="/" element={<DashBoard selectedProduct={selectedProduct} />} />
-                <Route path="/exylotech" element={<DashBoard selectedProduct={selectedProduct} />} />
-                <Route path="/dashboard" element={<DashBoard selectedProduct={selectedProduct} />} />
+                <Route path="/exylotech" element={<DashBoard selectedProduct={selectedProduct} salesData={salesData} />} />
+                <Route path="/dashboard" element={<DashBoard selectedProduct={selectedProduct} salesData={salesData} />} />
               </Routes>
             </div>
           </div>
