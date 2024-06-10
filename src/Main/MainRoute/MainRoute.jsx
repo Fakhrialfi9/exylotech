@@ -29,6 +29,7 @@ function MainRoute() {
               <Routes>
                 <Route path="/" element={<Navigate to="/dashboard" replace />} />
                 <Route path="/" Component={Sidebar} />
+                <Route path="/exylotech" Component={Sidebar} />
                 <Route path="/dashboard" Component={Sidebar} />
                 <Route path="/orders" Component={Sidebar} />
                 <Route path="/product" Component={Sidebar} />
@@ -42,6 +43,7 @@ function MainRoute() {
             <div className="PageContentLayout-Right">
               <Routes>
                 <Route path="/" Component={Navbar} />
+                <Route path="/exylotech" element={<Navbar selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} />} />
                 <Route path="/dashboard" element={<Navbar selectedProduct={selectedProduct} handleSelectProduct={handleSelectProduct} />} />
                 <Route path="/orders" Component={Navbar} />
                 <Route path="/product" Component={Navbar} />
@@ -52,6 +54,8 @@ function MainRoute() {
                 <Route path="/support" Component={Navbar} />
               </Routes>
               <Routes>
+                <Route path="/" element={<DashBoard selectedProduct={selectedProduct} />} />
+                <Route path="/exylotech" element={<DashBoard selectedProduct={selectedProduct} />} />
                 <Route path="/dashboard" element={<DashBoard selectedProduct={selectedProduct} />} />
               </Routes>
             </div>
@@ -59,6 +63,7 @@ function MainRoute() {
           <footer className="FooterLayout">
             <Routes>
               <Route path="/" Component={Footer} />
+              <Route path="/exylotech" Component={Footer} />
               <Route path="/dashboard" Component={Footer} />
               <Route path="/orders" Component={Footer} />
               <Route path="/product" Component={Footer} />
